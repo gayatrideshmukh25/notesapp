@@ -1,0 +1,51 @@
+
+     <%- include ('../partials/head.ejs') %>
+</head>
+<body>
+    <div class="list">
+      <% if(isLoggedIn) { %>
+         <form action="/">
+        <button id="goBack" type="submit">back</button>
+        </form>
+       <h1>Your Notes</h1>
+       <ul>
+        <% notes.forEach(note => { %>
+        <li>
+            <a class="DetailBtn"  href="/host/getUpdateNote/<%= note._id %>?editing=true"> <%= note.title %></a>
+            <form action="/host/deleted/<%= note._id %>" method="post">
+              <button type="submit" id="delBtn">X</button>
+            </form>
+        </li>
+        <% }) %>
+      </ul>
+       </div>
+      <% } else { %>
+        <h1>To see Your Notes </h1> 
+         <!-- <%- include ('../Auth/login.ejs') %> -->
+      <a class="auth" href="/signup">Sign Up</a>
+    <br>
+    <a class="auth" href="/login">Log In</a>
+      <% } %>
+    
+   
+
+
+     <!-- <div class="list">
+
+  <ul>
+    <% notes.forEach(note => { %>
+      <li>
+        <a class="DetailBtn" href="/getUpdateNote/<%= note.id %>?editing=true"><%= note.title %></a>
+
+        
+        <a href="/getUpdateNote/<%= note.id %>?editing=true" class="edit-link">Edit</a> 
+        
+        
+      </li>
+    <% }) %>
+  </ul>
+</div> -->
+
+    
+</body>
+</html>

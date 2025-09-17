@@ -1,0 +1,29 @@
+
+     <%- include ('../partials/head.ejs') %>
+</head>
+<body>
+  
+      <div class="list">
+        <form action="/<%=editing ? 'getNotes' : ' ' %>">
+        <button id="goBack" type="submit">back</button>
+        </form>
+    <form action="/host/<%=editing ? 'updateNote' : 'postNotes' %>" method="post">
+      <% if (editing && note) { %>
+  <input type="hidden" name="_id" value="<%= note._id %>"/>
+<% } %>
+
+        <input  type="text" name="title" value="<%=editing ? note.title : '' %>" placeholder="Enter Note Title" required/>
+        <br></br>
+        <input id="ConInp" type="text" name="content" value="<%=editing ? note.content : '' %>" placeholder="Enter Your Note"/>
+          <br></br>
+          <button  type="submit" > save</button>
+
+    </form>
+    <% if (editing && note) { %>
+      <form action="/host/deleted/<%= note._id %>" method="post">
+        <button type="submit" id="delBtn">X</button>
+      </form>
+    <% } %>
+     </div>
+</body>
+</html>

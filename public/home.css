@@ -1,0 +1,180 @@
+
+body {
+    margin: 0;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    background-color: #f0f0f0; /* Optional: light background */
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size:small;
+    color: red;
+    font-weight: bold;
+
+}
+.auth{
+    background-color: chocolate;
+     height: 50px;
+    width: 200px;
+    text-align: center;
+    padding-top: 15px;
+    margin: 10px;
+    font-size: larger;
+    color: black;}
+.demo {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(40, 189, 40);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow */
+    border-radius: 8px; /* Optional: rounded corners */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertical alignment */
+    align-items: center;  
+}
+.addBtn{
+    
+    background-color: chocolate;
+    height: 50px;
+    width: 200px;
+}
+.viewBtn{
+    background-color: chocolate;
+     height: 50px;
+    width: 200px;
+}
+input{
+      background-color:aliceblue;
+      gap: 10px;
+     height: 30px;
+    width: 250px;
+    border: none;
+}
+#ConInp{
+      background-color:aliceblue;
+      gap: 10px;
+     height: 55px;
+    width: 250px;
+    border: none;
+}
+/* Container holding all notes */
+.list {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 15px;
+    padding: 20px;
+    width: 300px;
+    overflow-y: auto;
+    background: #fefefe;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Individual note card */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 200px;
+    background-color: #fff9c4; /* soft yellow like sticky notes */
+    border-radius: 12px;
+    padding: 15px 15px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    position: relative;
+    transition: transform 0.2s ease;
+    font-size: 1rem;
+    color: #333;
+}
+
+li:hover {
+    transform: scale(1.01);
+}
+
+/* Delete button as an icon */
+#delBtn {
+    background-color: transparent;
+    border: none;
+    color: #ff5c5c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+   
+   
+    transition: color 0.3s ease;
+}
+
+#delBtn:hover {
+    color: #e60023;
+}
+
+/* Scrollbar styling (optional) */
+.list::-webkit-scrollbar {
+    width: 6px;
+}
+.list::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+a{
+    text-decoration: none;
+}
+
+ /* li{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    width: 230px;
+    height: 50px;
+    font-size: larger;
+     background-color: rgb(248, 79, 60); 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+     border-radius: 8px; 
+    list-style: none;
+ }
+
+.list{
+    font-size: x-large;
+display: flex;
+    justify-content: center;
+    align-items: self-start;
+   
+     height: 400px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  
+}
+#delBtn{
+    margin-bottom: 0%;
+    width: 20px;
+    
+} */
+ /* .list {
+    font-size: 30px;
+    background-color: white;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        white,
+        white 28px,
+        #ccc 29px
+    );
+    background-size: 100% 30px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    border-radius: 8px;
+} */
+

@@ -1,0 +1,23 @@
+
+    <%- include ('../partials/head.ejs') %>
+</head>
+<body>
+    <div class="demo">
+    <% if(isLoggedIn){ %>
+
+    <a class="auth" href="/logout">Logout</a>
+    <h1>NOTE APP</h1>
+    <a class="addBtn" href="/host/addNotes">Add New Note</a>
+    <br>
+    <a class="viewBtn" href="/getNotes">View Note</a>
+     
+     </div>
+    <% } else { %>
+       
+    <a class="auth" href="/signup">Sign Up</a>
+    <br>
+    <a class="auth" href="/login">Log In</a>
+     <h1>Welcome To The Notes </h1> 
+    <% } %>
+</body>
+</html>
